@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         // 进入相册选择
-                        photoPopupWindow.dismiss();
+                        photoPopupWindow.dismiss();//取消
                         PictureSelector.create(MainActivity.this)
                                 .openGallery(PictureMimeType.ofImage())//全部.PictureMimeType.ofAll()、图片.ofImage()、视频.ofVideo()、音频.ofAudio()
                                 .maxSelectNum(1)// 最大图片选择数量 int
