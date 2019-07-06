@@ -20,7 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
     private HttpUntils() {
         OkHttpClient client = new OkHttpClient.Builder()
                 .addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)).build();
-        retrofit = new Retrofit.Builder().baseUrl("http://172.17.8.100/").client(client).addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+        retrofit = new Retrofit.Builder().baseUrl("http://mobile.bwstudent.com/").client(client).addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create()).build();
     }
 
