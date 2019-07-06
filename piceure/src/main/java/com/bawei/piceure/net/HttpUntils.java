@@ -34,6 +34,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
             synchronized (HttpUntils.class) {
                 if (untils == null) {
                     untils = new HttpUntils();
+                    1
                 }
             }
         }
